@@ -1,0 +1,25 @@
+Spis Componentów :
+
+Navbar Component :
+- navbar
+- LogoComponent
+  = MenuComponent
+    - hamburger icon
+    - closed hamburger icon
+    - wysuwane menu
+    - buttony navigacyjne
+     
+
+Glassy Components :
+- glassy ikonka
+
+Image Components :
+- image projektów
+
+Form Components :
+- inputy
+
+Buttons Components : 
+- buttony (propsy)
+
+

@@ -1,0 +1,164 @@
+<script setup>
+
+import {ref} from 'vue'
+
+import menuButton from '../Buttons/MenuButton.vue'
+
+const isMenuOpen = ref(false)
+
+const animateHamburger = () => {
+    isMenuOpen.value = !isMenuOpen.value
+};
+
+
+</script>
+
+<template>
+        <nav class="flex justify-between items-center h-[7.692vh] max-h-16 max-w-screen-2xl mx-auto my-0 bg-custom-blue-opacity
+        sm:justify-between sm:text-l sm:max-h-20
+        lg:text-l lg:max-h-24
+        xl:text-xl xl:max-h-32">
+
+        <div class="flex items-center">
+            <img src="../../assets/Logo.svg" class="h-12 w-12 ml-10 cursor-pointer 
+        sm:ml-[3vw] sm:h-12 sm:w-12
+        lg:h-15 lg:w-15
+        xl:h-18 xl:w-18" 
+        />
+        <span class="text-white
+            sm:mr-[4.3vw] sm:ml-[4.3vw]
+            hidden
+            xl:block">Mateusz Zaniewski</span>
+        </div>
+        
+
+            <span class="text-white
+            sm:mr-[4.3vw] sm:ml-[4.3vw]
+            xl:hidden">Mateusz Zaniewski</span>
+
+        <div @click="animateHamburger" class="mr-5 flex justify-center items-center cursor-pointer h-full sm:hidden">
+
+            <span :class="isMenuOpen ? 'hamburgerOpen' : 'hamburger'" class="cursor-pointer"></span>
+
+        </div>
+        <div class="hidden text-white
+        sm:flex sm:justify-around sm:gap-8 sm:mr-[3vw]
+         ">
+        
+            <span class="menuOption cursor-pointer">Projekty</span>
+            <span class="menuOption cursor-pointer">O mnie</span>
+            <span class="menuOption cursor-pointer">Kontakt</span>
+        </div>
+        </nav>
+
+        <div v-if="isMenuOpen" class="hamleft max-w-[200px]">
+            <menuButton text="Projekty"/>
+            <menuButton text="O mnie"/>
+            <menuButton text="Kontakt"/>
+        </div>
+    
+
+
+
+</template>
+
+<style scoped>
+
+.hamleft {
+    height: calc(100vh - 9.692vh);
+    position: absolute;
+    right: 0;
+    outline: 1px white;
+    width: 50%;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.bg-custom-blue-opacity {
+    background-color: rgba(169, 208, 233, 0.8);
+  }
+
+.hamburger {
+    display: inline-block;
+    position: relative;
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.hamburger::before{
+    content: "";
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    transform: translateY(-10px);
+}
+
+.hamburger::after{
+    content: "";
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    transform: translateY(10px);
+}
+
+.menuOption:hover {
+    color: #195073;
+}
+
+
+.menuOption:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px #195073;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.menuOption:hover:after {
+    transform: scaleX(1)
+}
+
+
+
+.hamburgerOpen {
+    display: inline-block;
+    position: relative;
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.hamburgerOpen::before{
+    content: "";
+    height: 2px;
+    width: 15px;
+    background-color: white;
+    position: absolute;
+    transform: translateY(-10px);
+    
+}
+
+.hamburgerOpen::after{
+    content: "";
+    height: 2px;
+    width: 15px;
+    background-color: white;
+    position: absolute;
+    transform: translateY(10px);
+}
+
+
+
+
+</style>
