@@ -2,6 +2,7 @@
 
 import navbar from './NavbarComponent/Navbar.vue'
 import hero from './SmallComponents/HeroComponent.vue'
+import projects from './SmallComponents/ProjectsComponent.vue'
 
 
 </script>
@@ -11,6 +12,7 @@ import hero from './SmallComponents/HeroComponent.vue'
 
 <navbar  />
 <hero />
+<projects />
 
 </template>
 

@@ -50,11 +50,10 @@ const animateHamburger = () => {
             <span class="menuOption cursor-pointer">Kontakt</span>
         </div>
         </nav>
-
-        <div v-if="isMenuOpen" class="hamleft max-w-[200px]">
-            <menuButton text="Projekty"/>
-            <menuButton text="O mnie"/>
-            <menuButton text="Kontakt"/>
+        <div v-if="isMenuOpen" class="hamleft pb-3 pt-3">
+            <menuButton class="" text="Projekty"/>
+            <menuButton class="" text="O mnie"/>
+            <menuButton class="" text="Kontakt"/>
         </div>
     
 
@@ -65,19 +64,16 @@ const animateHamburger = () => {
 <style scoped>
 
 .hamleft {
-    height: calc(100vh - 9.692vh);
-    position: absolute;
-    right: 0;
-    outline: 1px white;
-    width: 50%;
-    float: right;
-    background-color: rgba(255, 255, 255, 0.7);
+    height: auto;
+    width: 100vw;
+    background-color: rgba(169, 208, 233, 0.8);
     backdrop-filter: blur(5px);
     display: flex;
-    flex-flow: column;
+    flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
-    padding-top: 40px;
+    padding: 0.75rem 1rem;
+    gap: 20px;
 }
 
 .bg-custom-blue-opacity {
