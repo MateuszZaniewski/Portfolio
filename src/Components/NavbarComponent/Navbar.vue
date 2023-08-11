@@ -14,8 +14,8 @@ const animateHamburger = () => {
 </script>
 
 <template>
-        <nav class="flex justify-between items-center h-[7.692vh] max-h-16 max-w-screen-2xl mx-auto my-0 bg-custom-blue-opacity
-        sm:justify-between sm:text-l sm:max-h-20
+        <nav class="flex justify-between items-center h-[7.692vh] max-h-16 mx-auto my-0 bg-custom-blue-opacity
+        sm:justify-between sm:text-l sm:max-h-20 sm:h-[13.311vh]
         lg:text-l lg:max-h-24
         xl:text-xl xl:max-h-32">
 
