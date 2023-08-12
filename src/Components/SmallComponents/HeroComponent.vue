@@ -17,7 +17,7 @@ const row3 = ['vuex.png', 'pinia.png', 'git.png', 'github.png'];
                    text-center
         sm:text-[50px] sm:max-w-[600px] sm:leading-[6.5vw] sm:pt-[7.5vw] sm:text-center sm:mx-auto
         lg:text-[60px] lg:max-w-[800px] lg:leading-[5.5vw] lg:pt-[7.5vw] lg:text-center lg:mx-auto
-        xl:text-[4.5vw] xl:leading-[5.15vw] xl:max-w-[1100px] xl:w-[60%] xl:text-center xl:mx-auto xl:pt-0">Cześć! Nazywam się <span class="text-[#E59D23]">Mateusz Zaniewski</span> i jestem <span class="text-[#E59D23]">Frontend Developerem</span></h1>
+        xl:text-[65px] xl:leading-[72px] xl:max-w-[1100px] xl:w-[60%] xl:text-center xl:mx-auto xl:pt-0 ">Cześć! Nazywam się <span class="text-[#E59D23]">Mateusz Zaniewski</span> i jestem <span class="text-[#E59D23]">Frontend Developerem</span></h1>
     </div>
     
 

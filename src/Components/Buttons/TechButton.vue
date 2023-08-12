@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
 
 <div>
-    <span class="text-[#195073]">{{ tech }}</span>
+    <span class="">{{ tech }}</span>
 </div>
 
 
@@ -21,10 +21,18 @@ const props = defineProps({
 <style scoped>
 
 div {
-    height: 20px;
-    width: 50px;
-    border-radius: 10px;
-    background-color: #ffffff;
+    padding: 0.25rem 0.5rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    color: #195073;
+    border: 1px solid #195073;
+   
+}
+
+div:hover {
+    background-color: #195073;
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 
