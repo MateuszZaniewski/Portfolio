@@ -6,7 +6,7 @@ const props = defineProps({
 });
 
 function resolveURL() {
-    return `src/assets/${props.sciezka}`
+    return `/Portfolio/src/assets/${props.sciezka}`
 }
 
 
