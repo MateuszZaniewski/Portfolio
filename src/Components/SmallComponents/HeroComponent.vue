@@ -10,8 +10,9 @@ const row3 = ['vuex.png', 'pinia.png', 'git.png', 'github.png'];
 
 <template>
 
-<main class="flex flex-col
-             xl:flex-row xl:h-auto items-center justify-around xl:pb-8 xl:pt-8" >
+<main class="flex flex-col items-center justify-center
+             xl:flex-row xl:h-auto  
+             xl:pb-8 xl:pt-8" >
     <div class="xl:w-[700px] xl:h-auto">
         <h1 class="text-[5.128vh] font-bold text-[#195073] pt-[2.564vh] w-[80vw] h-auto leading-[6.15vh]
                    text-center

@@ -15,11 +15,11 @@ console.log(props.obj)
 
 <template>
 
-<div class="container h-auto w-[90%] mb-20 pb-4
- mx-auto my-8 text-center rounded-lg border border-solid border-blue-300 bg-opacity-60 bg-white
+<div class="container h-auto w-[90%] pb-4
+ text-center rounded-lg border border-solid border-blue-300 bg-opacity-60 bg-white
  sm:max-w-[650px]
- lg:w-[100%]
- xl:mb-5">
+ lg:w-[100%] lg:max-w-[800px]
+ xl:">
     <h3 class="pt-2 pb-2 text-lg text-[#195073]
                sm:text-2xl">{{ obj.name}}</h3>
     <div class="sm:flex">

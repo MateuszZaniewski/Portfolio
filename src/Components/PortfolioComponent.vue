@@ -3,6 +3,8 @@
 import navbar from './NavbarComponent/Navbar.vue'
 import hero from './SmallComponents/HeroComponent.vue'
 import projects from './SmallComponents/ProjectsComponent.vue'
+import about from './SmallComponents/AboutComponent.vue'
+import contact from './SmallComponents/ContactComponent.vue'
 
 
 </script>
@@ -13,6 +15,8 @@ import projects from './SmallComponents/ProjectsComponent.vue'
 <navbar  />
 <hero />
 <projects />
+<about />
+<contact />
 
 </template>
 
