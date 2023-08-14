@@ -9,8 +9,6 @@ const props = defineProps({
     obj : Object
 });
 
-console.log(props.obj)
-
 </script>
 
 <template>
@@ -18,7 +16,7 @@ console.log(props.obj)
 <div class="container h-auto w-[90%] pb-4
  text-center rounded-lg border border-solid border-blue-300 bg-opacity-60 bg-white
  sm:max-w-[650px]
- lg:w-[100%] lg:max-w-[800px]
+ lg:w-[100%] lg:max-w-[600px]
  xl:">
     <h3 class="pt-2 pb-2 text-lg text-[#195073]
                sm:text-2xl">{{ obj.name}}</h3>

@@ -50,10 +50,10 @@ const animateHamburger = () => {
             <span class="menuOption cursor-pointer">Kontakt</span>
         </div>
         </nav>
-        <div v-if="isMenuOpen" class="hamleft pb-3 pt-3">
-            <menuButton class="" text="Projekty"/>
-            <menuButton class="" text="O mnie"/>
-            <menuButton class="" text="Kontakt"/>
+        <div v-if="isMenuOpen" class="hamleft pb-3 pt-3 flex justify-between">
+            <menuButton class="w-[33%] text-center border-r hover:text-[#E59D23] hover:scale-110 cursor-pointer" text="Projekty"/>
+            <menuButton class="w-[33%] text-center hover:text-[#E59D23] hover:scale-110 cursor-pointer" text="O mnie"/>
+            <menuButton class="w-[33%] text-center border-l hover:text-[#E59D23] hover:scale-110 cursor-pointer" text="Kontakt"/>
         </div>
     
 
@@ -65,9 +65,7 @@ const animateHamburger = () => {
 
 .hamleft {
     height: auto;
-    width: 100vw;
     background-color: rgba(169, 208, 233, 0.8);
-    backdrop-filter: blur(5px);
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;

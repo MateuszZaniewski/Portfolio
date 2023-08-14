@@ -1,6 +1,6 @@
 <template>
 
-<button class="outline-white max-w-[140px] max-h-[39px]">{{ props.text }}</button>
+<a class="outline-white max-w-[140px] max-h-[39px]">{{ props.text }}</a>
 
 
 </template>
@@ -20,13 +20,8 @@ const props = defineProps({
     box-sizing: border-box;
 }
 
-button {
-    width: 35vw;
-    height: 10vw;
+a {
     color: white;
-    background-color: rgba(76, 169, 219, 0.7);
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.50);
 }
 
 button:hover {

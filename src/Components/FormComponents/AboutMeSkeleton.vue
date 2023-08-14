@@ -10,7 +10,7 @@ import GitHubLink from '../Buttons/GitHubButton.vue'
 <div class="container h-auto w-[90%] mx-auto pb-4 my-10
  text-center rounded-lg border border-solid border-blue-300 bg-opacity-60 bg-white
  sm:max-w-[650px]
- lg:w-[100%] lg:max-w-[800px]
+ lg:w-[100%] lg:max-w-[600px]
  xl:">
  <p class="w-[90%] mx-auto text-left px-4 py-4 text-white
            lg:text-[20px]">
@@ -18,7 +18,7 @@ import GitHubLink from '../Buttons/GitHubButton.vue'
  </p>
 </div>
 
-<GitHubLink class="px-12 py-4 flex justify-center w-fit mx-auto rounded-2xl bg-white bg-opacity-20 text-white hover:bg-opacity-80 hover:text-[#195073] hover:border-[#195073]
+<GitHubLink class="px-12 py-3 flex w-fit mx-auto rounded-2xl bg-[#195073] text-white hover:bg-opacity-60  hover:border-white
 lg:text-[20px]"/>
 
 

@@ -6,7 +6,7 @@ const props = defineProps({
 });
 
 function resolveURL() {
-    return `/Portfolio/src/assets/${props.sciezka}`
+    return `https://raw.githubusercontent.com/MateuszZaniewski/Portfolio/main/src/assets/${props.sciezka}`
 }
 
 
@@ -15,14 +15,13 @@ function resolveURL() {
 
 
 <template>
-<section>
-    <div :style="{ animationDelay: `${index * 0.5}s` }" class="flex h-[12.821vw] w-[12.821vw] max-h-[60px] max-w-[60px]
+    <div :style="{ animationDelay: `${index * 0.4}s` }" class="flex h-[12.821vw] w-[12.821vw] max-h-[60px] max-w-[60px]
             sm:max-h-[70px] sm:max-w-[70px]
             lg:max-h-[75px] lg:max-w-[75px]
             xl:h-[5vw] xl:w-[5vw] xl:max-h-[80px] xl:max-w-[80px]">
     <img class="h-full w-full p-1" :src="resolveURL()" :title="sciezka.slice(0, -4)" :alt="sciezka.slice(0, -4)"/>
 </div>
-</section>
+
 
 
 </template>

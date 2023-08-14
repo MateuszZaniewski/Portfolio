@@ -8,13 +8,13 @@
 <template>
 
 <section>
-    <h2 class="text-3xl w-[90%] mx-auto pb-10 pt-8 text-white 
+    <h2 class="text-3xl w-[90%] mx-auto pb-5 pt-10 text-white 
     sm:text-4xl sm:max-w-[600px]
     lg:text-center lg:pb-10">Formularz Kontaktowy</h2>
 
-    <div class="sm:flex sm:flex-row sm:items-start sm:justify-center">
+    <div class="sm:flex sm:flex-row sm:items-start sm:justify-center max-w-[1000px] mx-auto">
         <div class="sm:order-2 sm:w-[50%]">
-            <p class="text-white w-[90%] mx-auto pb-10 pt-8 sm:mx-0 sm:text-[20px] sm:w-[60%] sm:pl-8 sm:py-0 lg:text-[22px]">Podoba ci się moja praca? Chcesz nawiązać współpracę? Koniecznie do mnie napisz! Skorzystaj z formularza lub napisz na mateusz.zaniewski94@gmail.com</p>
+            <p class="text-white w-[90%] mx-auto pb-10 sm:mx-0 sm:text-[20px] sm:w-[60%] sm:pl-8 sm:py-0 lg:text-[22px]">Podoba ci się moja praca? Chcesz nawiązać współpracę? Koniecznie do mnie napisz! Skorzystaj z formularza lub napisz na mateusz.zaniewski94@gmail.com</p>
         </div>
 
 
@@ -23,7 +23,7 @@
                 <input placeholder="Imię" class="bg-white bg-opacity-20 border border-white rounded-lg max-w-[350px] placeholder-[#195073] py-3" />
                 <input type="email" placeholder="Email" class="bg-white bg-opacity-20 border border-white rounded-lg max-w-[350px] placeholder-[#195073] py-3" />
                 <textarea placeholder="Treść wiadomości" class="bg-white bg-opacity-20 border border-white rounded-lg max-w-[350px] placeholder-[#195073] py-3 " />
-                <button class="px-12 py-3 w-fit rounded-2xl bg-[#195073] text-white hover:bg-opacity-60  hover:border-white
+                <button class="px-12 py-3 w-fit rounded-2xl bg-[#195073] border text-white hover:bg-opacity-60  hover:border-white
                 lg:text-[20px]" type="submit">Wyślij</button>
             </form>
         </div>
@@ -42,7 +42,7 @@
 <style scoped>
 
 section {
-    background: linear-gradient(#1e74a9cc, #ffffff);
+    background: linear-gradient(#1e74a9cc, #19507370);
 }
 
 input, textarea {
