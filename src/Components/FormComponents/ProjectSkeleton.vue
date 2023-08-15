@@ -4,13 +4,11 @@ import techButton from '../Buttons/TechButton.vue'
 import redirectButton from '../Buttons/ProjectRedirectButton.vue'
 
 const props = defineProps({
-    projNum: Array,
-    projName : String,
     obj : Object
 });
 
 function resolveURL () {
-    return `https://raw.githubusercontent.com/MateuszZaniewski/Portfolio/main/src/assets/${props.obj.img}`
+    return `https://raw.githubusercontent.com/MateuszZaniewski/Portfolio/main/src/assets/ProjectsImages/${props.obj.img}`
 }
 
 </script>
@@ -25,12 +23,12 @@ function resolveURL () {
     <h3 class="pt-2 pb-2 text-lg text-[#195073]
                sm:text-2xl">{{ obj.name}}</h3>
     <div class="sm:flex">
-        <div class="mx-auto sm:w-[50%] w-[90%]
-                    sm:flex sm:justify-center sm:h-[250px]
+        <div class="mx-auto sm:w-[50%] w-[90%] border py-2 border-solid border-blue-200 bg-white bg-opacity-20 rounded-lg
+                    sm:flex sm:justify-center sm:h-[250px] sm:border-none
                     sm:pt-5
                     ">
                 
-                    <img class="rounded-lg mx-auto border border-gray-400
+                    <img class="rounded-lg mx-auto
                             " :src="resolveURL()"  />
                 
                 
@@ -52,8 +50,8 @@ function resolveURL () {
                 </div>
                 <div class="sm:order-3">
                     <div class="flex justify-evenly pt-5 pb-5 sm:order-3">
-                        <redirectButton name="Github"/>
-                        <redirectButton name="Demo"/>
+                        <redirectButton name="Github" :link="obj.git"/>
+                        <redirectButton name="Demo" :link="obj.demo"/>
                     </div>
                 </div>
                     
