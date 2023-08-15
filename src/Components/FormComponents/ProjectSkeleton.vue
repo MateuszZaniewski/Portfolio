@@ -9,7 +9,9 @@ const props = defineProps({
     obj : Object
 });
 
-const imageSrc = props.obj.src
+function resolveURL () {
+    return `https://raw.githubusercontent.com/MateuszZaniewski/Portfolio/main/src/assets/${props.obj.img}`
+}
 
 </script>
 
@@ -23,12 +25,16 @@ const imageSrc = props.obj.src
     <h3 class="pt-2 pb-2 text-lg text-[#195073]
                sm:text-2xl">{{ obj.name}}</h3>
     <div class="sm:flex">
-        <div class="mx-auto sm:w-[50%] sm:flex sm:justify-center sm:items-start m-w-[350px]
-                    xl:pt-5
+        <div class="mx-auto sm:w-[50%] w-[90%]
+                    sm:flex sm:justify-center sm:h-[250px]
+                    sm:pt-5
                     ">
-            <div>
-                <img class="rounded-lg w-[90%] mx-auto border border-gray-400" :src="imageSrc"  />
-            </div>
+                
+                    <img class="rounded-lg mx-auto border border-gray-400
+                            " :src="resolveURL()"  />
+                
+                
+            
         </div>
             <div class="sm:flex flex-col sm:w-[50%]">
                     <div class="flex justify-left gap-4 flex-wrap pt-5 pb-5 w-[90%] mx-auto
@@ -72,6 +78,7 @@ const imageSrc = props.obj.src
 .container {
     box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.5);
 }
+
 
 
 </style>

@@ -23,7 +23,12 @@ class Project {
 }
 
 
-let proj1 = new Project('Portfolio','../../assets/portfolioImage.png' , 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et mauris eget dolor placerat consectetur. Duis sollicitudin sem ac luctus pulvinar. Fusce ornare, lorem vitae eleifend consectetur, lectus mi tempus arcu, quis mattis sem leo a augue. Aenean vestibulum neque laoreet felis scelerisque, non tempus turpis euismod. Pellentesque pulvinar dignissim.' ,['Vue','CSS','Vuex','GitHub'], true, false);
+let proj1 = new Project('Portfolio',
+'portfolioImage.png',
+'W projekcie portfolio skupiłem się na praktycznym wykorzystaniu komponentów w Vuejs oraz zarządzaniu stylami za pomocą TailwindCSS. Głównym zadaniem było pokazanie zdobytych umiejętności oraz przetestowanie własnej wiedzy w zakresie zarządzania projektem. Jest to również autorski projekt wykonany przeze mnie w Figmie.' ,
+['HTML','CSS','Javascript','Vuejs', 'TailwindCSS', 'Git', 'GitHub', 'Figma'],
+'https://github.com/MateuszZaniewski/Portfolio',
+'https://mateuszzaniewski.github.io/Portfolio/');
 
 
 
