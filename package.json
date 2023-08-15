@@ -9,9 +9,15 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build && gh-pages -d dist",
+    "devStart": "nodemon server.js"
   },
   "dependencies": {
+    "ejs": "^3.1.9",
+    "eslint": "^8.47.0",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.4",
+    "nodemon": "^3.0.1",
     "vue": "^3.3.4"
   },
   "devDependencies": {
@@ -21,5 +27,17 @@
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.8"
+  },
+  "description": "This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateuszZaniewski/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MateuszZaniewski/Portfolio/issues"
   }
 }

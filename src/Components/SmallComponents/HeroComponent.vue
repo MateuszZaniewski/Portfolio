@@ -31,6 +31,7 @@
 <style scoped>
 
 main {
+    min-height: -webkit-fill-available;
     height: 92.3vh;
     background: linear-gradient(#8FC1E2, #FFFFFF );
 }

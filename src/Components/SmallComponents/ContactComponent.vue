@@ -8,7 +8,7 @@
 <template>
 
 <section>
-    <h2 class="text-3xl w-[90%] mx-auto pb-5 pt-10 text-white 
+    <h2 class="text-3xl w-[90%] mx-auto pb-10 pt-10 text-white 
     sm:text-4xl sm:max-w-[600px]
     lg:text-center lg:pb-10">Formularz Kontaktowy</h2>
 
@@ -19,10 +19,10 @@
 
 
         <div class="sm:order-1 sm:w-[50%] sm:flex sm:justify-end lg:text-[18px]">
-            <form class="flex flex-col gap-5 pl-5 w-[80%] sm:pl-0 ">
-                <input placeholder="Imię" class="bg-white bg-opacity-20 border border-white rounded-lg max-w-[350px] placeholder-[#195073] py-3" />
-                <input type="email" placeholder="Email" class="bg-white bg-opacity-20 border border-white rounded-lg max-w-[350px] placeholder-[#195073] py-3" />
-                <textarea placeholder="Treść wiadomości" class="bg-white bg-opacity-20 border border-white rounded-lg max-w-[350px] placeholder-[#195073] py-3 " />
+            <form action="https://formeezy.com/api/v1/forms/64db395de8c3880008d26c0e/submissions" method="POST" class="flex flex-col gap-5 pl-5 w-[80%] sm:pl-0 ">
+                <input type="text" name="name" placeholder="Imię" required class="bg-white bg-opacity-20 border border-white rounded-lg max-w-[350px] placeholder-[#195073] py-3" />
+                <input type="email" name="email" placeholder="Email" required class="bg-white bg-opacity-20 border border-white rounded-lg max-w-[350px] placeholder-[#195073] py-3" />
+                <textarea placeholder="Treść wiadomości" name="message" required class="bg-white bg-opacity-20 border border-white rounded-lg max-w-[350px] placeholder-[#195073] py-3 " />
                 <button class="px-12 py-3 w-fit rounded-2xl bg-[#195073] border text-white hover:bg-opacity-60  hover:border-white
                 lg:text-[20px]" type="submit">Wyślij</button>
             </form>

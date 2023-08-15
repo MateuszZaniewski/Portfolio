@@ -20,7 +20,7 @@ const animateHamburger = () => {
         xl:text-xl xl:max-h-32">
 
         <div class="flex items-center">
-            <img src="../../assets/Logo.svg" class="h-12 w-12 ml-10 cursor-pointer 
+            <img src="../../assets/Logo.svg" class="h-12 w-12 ml-5 cursor-pointer 
         sm:ml-[3vw] sm:h-12 sm:w-12
         lg:h-15 lg:w-15
         xl:h-18 xl:w-18" 
