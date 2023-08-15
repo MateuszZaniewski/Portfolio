@@ -9,6 +9,8 @@ const props = defineProps({
     obj : Object
 });
 
+const imageSrc = props.obj.src
+
 </script>
 
 <template>
@@ -21,10 +23,11 @@ const props = defineProps({
     <h3 class="pt-2 pb-2 text-lg text-[#195073]
                sm:text-2xl">{{ obj.name}}</h3>
     <div class="sm:flex">
-        <div class="mx-auto sm:w-[50%] sm:flex sm:justify-center sm:items-start pt-5 m-w-[350px]
+        <div class="mx-auto sm:w-[50%] sm:flex sm:justify-center sm:items-start m-w-[350px]
+                    xl:pt-5
                     ">
             <div>
-                <img class="rounded-lg w-[90%] mx-auto border border-gray-400" src="../../assets/placeholder-image.png" />
+                <img class="rounded-lg w-[90%] mx-auto border border-gray-400" :src="imageSrc"  />
             </div>
         </div>
             <div class="sm:flex flex-col sm:w-[50%]">

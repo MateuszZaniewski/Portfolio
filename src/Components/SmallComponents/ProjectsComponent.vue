@@ -23,7 +23,7 @@ class Project {
 }
 
 
-let proj1 = new Project('Portfolio','../../assets/vuejs.png' , 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et mauris eget dolor placerat consectetur. Duis sollicitudin sem ac luctus pulvinar. Fusce ornare, lorem vitae eleifend consectetur, lectus mi tempus arcu, quis mattis sem leo a augue. Aenean vestibulum neque laoreet felis scelerisque, non tempus turpis euismod. Pellentesque pulvinar dignissim.' ,['Vue','CSS','Vuex','GitHub'], true, false);
+let proj1 = new Project('Portfolio','../../assets/portfolioImage.png' , 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et mauris eget dolor placerat consectetur. Duis sollicitudin sem ac luctus pulvinar. Fusce ornare, lorem vitae eleifend consectetur, lectus mi tempus arcu, quis mattis sem leo a augue. Aenean vestibulum neque laoreet felis scelerisque, non tempus turpis euismod. Pellentesque pulvinar dignissim.' ,['Vue','CSS','Vuex','GitHub'], true, false);
 
 
 
