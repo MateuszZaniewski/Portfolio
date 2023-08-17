@@ -26,17 +26,17 @@ const animateHamburger = () => {
             <span :class="isMenuOpen ? 'hamburgerOpen' : 'hamburger'" class="cursor-pointer"></span>
         </div>
         <div class="hidden text-white sm:flex sm:justify-around sm:gap-8 sm:mr-[3vw]">
-            <span @click="scrollToSection('section1')" class="menuOption cursor-pointer">Projekty</span>
-            <span @click="scrollToSection('about')" class="menuOption cursor-pointer">O mnie</span>
-            <span @click="scrollToSection('contact')" class="menuOption cursor-pointer">Kontakt</span>
+            <a href="#projects" class="menuOption cursor-pointer" >Projekty</a>
+            <a href="#about" class="menuOption cursor-pointer" >O mnie</a>
+            <a href="#contact" class="menuOption cursor-pointer" >Kontakt</a>
         </div>
     </nav>
     <div v-if="isMenuOpen" class="hamleft pb-3 pt-3 flex justify-between">
-        <menuButton class="w-[33%] text-center border-r hover:text-[#E59D23] hover:scale-110 cursor-pointer"
-            text="Projekty" />
-        <menuButton class="w-[33%] text-center hover:text-[#E59D23] hover:scale-110 cursor-pointer" text="O mnie" />
-        <menuButton class="w-[33%] text-center border-l hover:text-[#E59D23] hover:scale-110 cursor-pointer"
-            text="Kontakt" />
+        <menuButton href="#projects" class="w-[33%] text-center border-r hover:text-[#E59D23] hover:scale-110 cursor-pointer"
+            text="Projekty" @click="animateHamburger()" />
+        <menuButton href="#about" class="w-[33%] text-center hover:text-[#E59D23] hover:scale-110 cursor-pointer" text="O mnie" @click="animateHamburger()" />
+        <menuButton href="#contact" class="w-[33%] text-center border-l hover:text-[#E59D23] hover:scale-110 cursor-pointer"
+            text="Kontakt" @click="animateHamburger()" />
     </div>
 </template>
 

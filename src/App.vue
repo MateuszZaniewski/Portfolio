@@ -6,4 +6,10 @@ import Portfolio from "./components/PortfolioComponent.vue";
   <Portfolio />
 </template>
 
-<style scoped></style>
+<style>
+
+html{
+  scroll-behavior:smooth
+}
+
+</style>

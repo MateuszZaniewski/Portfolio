@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+const onSubmit = () => {
+    console.log('Dziękuję za wysłanie wiadomości')
+};
+</script>
 
 <template>
-    <section>
+    <section id="contact">
         <h2 class="text-3xl w-[90%] mx-auto pb-10 pt-10 text-white sm:text-4xl sm:max-w-[600px] lg:text-center lg:pb-10">
             Formularz Kontaktowy
         </h2>
@@ -17,7 +21,7 @@
             </div>
 
             <div class="sm:order-1 sm:w-[50%] sm:flex sm:justify-end lg:text-[18px]">
-                <form action="https://formeezy.com/api/v1/forms/64db395de8c3880008d26c0e/submissions" method="POST"
+                <form v-on:submit.prevent="onSubmit" action="https://formeezy.com/api/v1/forms/64db395de8c3880008d26c0e/submissions" method="POST" 
                     class="flex flex-col gap-5 pl-5 w-[80%] sm:pl-0">
                     <input type="text" name="name" placeholder="Imię" required
                         class="bg-white bg-opacity-20 border border-white rounded-lg max-w-[350px] placeholder-[#195073] py-3" />

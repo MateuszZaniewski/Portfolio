@@ -21,7 +21,7 @@ const row1 = [
 </script>
 
 <template>
-    <section>
+    <section id="about">
         <h2 class="text-3xl w-[90%] mx-auto pb-5 pt-5 text-white sm:text-4xl sm:max-w-[600px] lg:text-center lg:pb-10">
             O mnie
         </h2>

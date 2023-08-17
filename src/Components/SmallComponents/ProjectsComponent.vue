@@ -104,7 +104,7 @@ const proj6 = new Project(
 </script>
 
 <template>
-    <h2 class="text-3xl w-[90%] mx-auto pb-5 pt-5 text-[#195073] sm:text-4xl sm:max-w-[600px] lg:text-center lg:pb-10">
+    <h2 id="projects" class="text-3xl w-[90%] mx-auto pb-5 pt-5 text-[#195073] sm:text-4xl sm:max-w-[600px] lg:text-center lg:pb-10">
         Projekty
     </h2>
     <section
