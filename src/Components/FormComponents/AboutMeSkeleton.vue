@@ -1,5 +1,10 @@
 <script setup>
 import GitHubLink from "../Buttons/GitHubButton.vue";
+
+function resolveURL(path) {
+    return `https://raw.githubusercontent.com/MateuszZaniewski/Portfolio/main/src/assets/${path}`;
+}
+
 </script>
 
 <template>
@@ -19,6 +24,12 @@ import GitHubLink from "../Buttons/GitHubButton.vue";
 
     <GitHubLink
         class="px-12 py-3 flex w-fit mx-auto rounded-2xl bg-[#195073] text-white hover:bg-opacity-60 hover:border-white lg:text-[20px]" />
+    <div>
+        <div> <img :src="resolveURL('githubIcon.png')" /> </div>
+        <div> <img :src="resolveURL('facebook.png')" /> </div>
+        <div> <img :src="resolveURL('linkedin.png')" /> </div>
+
+    </div>
 </template>
 
 <style scoped>
