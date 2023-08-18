@@ -1,10 +1,7 @@
 <script setup>
-import GitHubLink from "../Buttons/GitHubButton.vue";
-
 function resolveURL(path) {
     return `https://raw.githubusercontent.com/MateuszZaniewski/Portfolio/main/src/assets/${path}`;
 }
-
 </script>
 
 <template>
@@ -22,12 +19,10 @@ function resolveURL(path) {
         </p>
     </div>
 
-    <GitHubLink
-        class="px-12 py-3 flex w-fit mx-auto rounded-2xl bg-[#195073] text-white hover:bg-opacity-60 hover:border-white lg:text-[20px]" />
-    <div>
-        <div> <img :src="resolveURL('githubIcon.png')" /> </div>
-        <div> <img :src="resolveURL('facebook.png')" /> </div>
-        <div> <img :src="resolveURL('linkedin.png')" /> </div>
+    <div class="flex justify-evenly pt-5 max-w-[600px] mx-auto">
+        <a href="https://github.com/MateuszZaniewski" class="h-[12.821vw] w-[12.821vw] max-h-[60px] max-w-[60px] sm:max-h-[70px] sm:max-w-[70px] lg:max-h-[75px] lg:max-w-[75px] xl:h-[5vw] xl:w-[5vw] xl:max-h-[80px] xl:max-w-[80px]"> <img class="cursor-pointer h-full w-full" :src="resolveURL('githubIcon.png')" /> </a>
+        <a href="https://www.facebook.com/profile.php?id=100006132347611" class="h-[12.821vw] w-[12.821vw] max-h-[60px] max-w-[60px] sm:max-h-[70px] sm:max-w-[70px] lg:max-h-[75px] lg:max-w-[75px] xl:h-[5vw] xl:w-[5vw] xl:max-h-[80px] xl:max-w-[80px]"> <img class="cursor-pointer h-full w-full" :src="resolveURL('facebook.png')" /> </a>
+        <a href="https://www.linkedin.com/in/mateusz-zaniewski-6128ba288/" class="h-[12.821vw] w-[12.821vw] max-h-[60px] max-w-[60px] sm:max-h-[70px] sm:max-w-[70px] lg:max-h-[75px] lg:max-w-[75px] xl:h-[5vw] xl:w-[5vw] xl:max-h-[80px] xl:max-w-[80px]"> <img class="cursor-pointer h-full w-full" :src="resolveURL('linkedin.png')" /> </a>
 
     </div>
 </template>
