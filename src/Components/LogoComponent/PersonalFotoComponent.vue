@@ -15,8 +15,8 @@
 .foto {
     height: 100%;
     width: 100%;
-    background-image: url("../../assets/me.jpg");
+    background-image: url("https://raw.githubusercontent.com/MateuszZaniewski/Portfolio/f75086355622800485c71443f65bc86ffc446bbd/src/assets/personalPhoto.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 </style>
