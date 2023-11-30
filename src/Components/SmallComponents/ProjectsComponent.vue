@@ -58,21 +58,19 @@ const proj2 = new Project(
 const proj3 = new Project(
     "Yu-Gi-Oh Card Searcher",
     "yugioh.png",
-    "Jest to wyszukiwarka kart Yu-Gi-Oh, korzystająca z zewnętrznego API. Pozwala użytkownikowi szukać karty, stosować filtry, sortować oraz go autoryzuje. Domyślnie stworzona na wersję mobilną (jako pomoc przy grze w terenie). Projekt jest ciągle w fazie rozwoju. W przyszłości chcę dodać nowe funkcje, takie jak : budowanie talii czy wymiana kart",
+    "Jest to wyszukiwarka kart Yu-Gi-Oh, korzystająca z zewnętrznego API. Pozwala użytkownikowi szukać karty, stosować filtry, sortować, dodawać do ulubionych itp. Domyślnie stworzona na wersję mobilną (jako pomoc przy grze w terenie). Projekt jest ciągle w fazie rozwoju.",
     [
         "HTML",
         "CSS",
         "Javascript",
         "Vuejs",
-        "VueRouter",
-        "Vuex",
+        "Nuxtjs",
         "Firebase",
-        "Postman",
         "GitHub",
         "Git",
     ],
-    "https://github.com/MateuszZaniewski/Yu-Gi-Oh-Api",
-    "https://mateuszzaniewski.github.io/Yu-Gi-Oh-Api/#/"
+    "https://github.com/MateuszZaniewski/YugiohNuxt",
+    "https://yugioh-nuxt.vercel.app/"
 );
 
 const proj4 = new Project(
